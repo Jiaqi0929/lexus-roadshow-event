@@ -457,14 +457,8 @@ const RegistrationForm: React.FC = () => {
                   name="license_expiry_date"
                   value={formData.license_expiry_date}
                   onChange={handleInputChange}
-                  required
                   className={inputClasses("license_expiry_date")}
                 />
-                {errors.license_expiry_date && (
-                  <p className="text-red-500 text-sm mt-1">
-                    {errors.license_expiry_date}
-                  </p>
-                )}
               </div>
 
               <div className="md:col-span-2">
@@ -557,5 +551,6 @@ const RegistrationForm: React.FC = () => {
 
 
 export default RegistrationForm;
+
 
 
